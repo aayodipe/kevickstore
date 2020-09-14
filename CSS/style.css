@@ -170,7 +170,51 @@ body {
     width: 100%;
     background-color: #fff;
 }
+
+.second-nav-item:first-child {
+    position: relative;
+  
+}
 .dropdown{
-    display: none;
+    position: absolute;
+    top: 100%;
+    width: 70rem;
+    background-color: #fffeee;
+    padding: 1.6rem;
+    display: grid;
+    grid-template-columns: repeat(7, 10rem);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s;
+ 
+}
+.second-nav-item:first-child:hover .dropdown{
+    visibility: visible;
+    opacity:1;
+}
+
+.dropdown-first-list {
+    grid-column: 1 /3;
+}
+.dropdown-second-list {
+    grid-column: 3 /5;
+}
+.dropdown img {
+    grid-column: 5/-1;
+}
+.dropdown ul {
+    list-style: none;
+}
+
+.dropdown ul li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: #34598F;
+    margin: 0 0 1rem 1.6rem;
+    display: block;
+}
+.dropdown ul li a:hover {
+    color:#458a9f
 }
 /* End of Navbar  */
