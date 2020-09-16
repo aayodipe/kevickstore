@@ -20,7 +20,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: minmax(6rem,1fr) repeat(8, minmax(min-content, 16rem)) minmax(6rem,1fr);
-    grid-template-rows: repeat(3, min-content) 70vh repeat(5, min-content) repeat(auto-fit, minmax(6rem, 1fr)) 1fr;
+    grid-template-rows: repeat(3, min-content) 70vh repeat(5, min-content);
     grid-gap: 1.6rem;
     margin-top: 1.6rem;
 }
