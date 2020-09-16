@@ -11,6 +11,36 @@
 </head>
 
 <body>
+    <!-- modal box -->
+    <input type="checkbox" id="show-hide-forms">
+    <div class="modal-forms-wrapper">
+        <label for="show-hide-forms">&#10005;</label>
+        <input type="checkbox" id="show-forms">
+        <div class="show-btn-wrappers">
+            <label for="show-forms" class="show-form-btn show-signup-form">Sign Up</label>
+            <label for="show-forms" class="show-form-btn show-login-form">Log In</label>
+        </div>
+        <form action="" class="signup-form">
+            <h1 class="form-heading">Sign Up</h1>
+            <div class="fullname-inputs-wrapper">
+                <input type="text" name="first-name" class="first-name" placeholder="First Name">
+                <input type="text" name="first-name" class="first-name" placeholder="First Name"> 
+            </div>
+                <input type="text" name="username" class="username form-input" placeholder="User Name">
+                <input type="email" name="emal" class="email form-input" placeholder="Email">
+                <input type="password" name="password" class="password form-input" placeholder="Password">
+                <input type="submit" class="form-btn">           
+        </form>
+      
+        <form action="" class="login-form">
+            <h1 class="form-heading">Log In</h1>
+            <input type="text" name="username" class="username form-input" placeholder="User Name">
+            <input type="password" name="password" class="password form-input" placeholder="Password">
+            <input type="submit" class="form-btn">
+        </form>
+    </div>
+
+    <!-- End of Modal Box -->
     <div class="container">
         <!-- Social Icon  item 1-->
         <ul class="social-icons">
@@ -26,8 +56,11 @@
         <!-- first-nav  item 2 -->
         <nav class="first-nav">
             <ul class="first-nav-lists">
-                <li class="first-nav-item"><a href="#" class="first-nav-link"><i class="fas fa-sign-in-alt"></i>Sign
-                        Up/Log In</a></li>
+                <li class="first-nav-item"><a href="#" class="first-nav-link">
+                        <label for="show-hide-forms">
+                            <i class="fas fa-sign-in-alt"></i>Sign
+                            Up/Log In</a></li>
+                </label>
                 <li class="first-nav-item"><a href="#" class="first-nav-link"><i
                             class="fas fa-shopping-cart"></i>Cart(<span>2 Items</span>)</a></li>
                 <li class="first-nav-item"><a href="#" class="first-nav-link"><i class="fas fa-truck"></i>Order Now</a>
@@ -192,7 +225,7 @@
                     <p class="bestselling-furniture-paragraph">price:$ 99.99</p>
                     <button class="bestselling-furniture-btn">Buy Now</button>
                 </div>
-       
+
             </div>
         </section>
         <!-- Galary  -->
@@ -205,7 +238,7 @@
             <img src="images/galary-5.jpg" alt="" class="galary-img galary-image-5" title="5">
             <img src="images/galary-6.png" alt="" class="galary-img galary-image-6" title="6">
             <img src="images/galary-7.png" alt="" class="galary-img galary-image-7" title="7">
-            <img src="images/galary-8.png" alt="" class="galary-img galary-image-8" title="8"> 
+            <img src="images/galary-8.png" alt="" class="galary-img galary-image-8" title="8">
             <img src="images/galary-9.png" alt="" class="galary-img galary-image-9" title="9">
             <img src="images/galary-10.png" alt="" class="galary-img galary-image-10" title="10">
             <img src="images/galary-11.png" alt="" class="galary-img galary-image-11" title="11">
