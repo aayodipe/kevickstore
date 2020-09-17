@@ -54,7 +54,9 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     list-style: none;
 }
-
+.first-nav-lists label {
+    cursor: pointer;
+}
 .first-nav-link{
     text-decoration: none;
     font-size: 1.6rem;
@@ -62,6 +64,7 @@ body {
     display: inline-block;
     width: 100%;
     text-align: center;
+
 
 }
 
@@ -143,6 +146,8 @@ body {
     text-transform: uppercase;
     color: #12476e;
     padding: .8rem 0;
+    
+    
 }
 
 .second-nav-item:hover .second-nav-link{
@@ -640,15 +645,18 @@ body {
 .modal-forms-wrapper {
     background-color: #eee;
     position: fixed;
-    top:50%;
+    top:25%;
     left: 50%;
-    transform:translate(-50%, -50%);
+    transform:translateX(-50%);
     z-index: 1000;
     padding: 2rem;
     border: .1rem solid #34598f;
     border-radius: .3rem;
+    display: none;
+
 }
-.show-btn-wrappers {
+
+.show-btn-wrapper {
     display: flex;
     padding: 1rem;
 }
@@ -714,4 +722,77 @@ body {
 
 .form-btn:hover {
     background-color: rgba(211, 136, 0, 1);
+}
+
+.x-btn {
+    font-size: 2rem;
+    color: #00154c;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 3.3rem;
+    right: 3.5rem;
+    cursor: pointer;
+}
+
+
+/* adding Modal functionality to form */
+
+.login-form {
+    display:none;
+}
+
+.show-signup-form {
+    color:#888;
+    background-color: #34598f;
+    pointer-events: none;
+
+}
+
+#show-form:checked ~ .show-btn-wrapper .show-login-form {
+    color: #888;
+    background-color: #34598f;
+    pointer-events:none;
+
+}
+
+#show-form:checked ~ .show-btn-wrapper .show-signup-form {
+    color: #fff;
+    background-color: #12376e;
+    pointer-events:initial;
+
+}
+#show-form:checked ~ .login-form{
+    display: block
+}
+#show-form:checked ~ .signup-form{
+    display: none
+}
+
+
+/* show Modal Box */
+#show-hide-forms:checked ~ .modal-forms-wrapper {  
+    display: block;
+    animation: modal-box .5s;
+}
+
+#show-hide-forms:checked ~ .container {
+    pointer-events: none;
+    opacity: .5;
+}
+
+
+@keyframes modal-box {
+    0% {
+        left :40%
+    }
+ 
+    50% {
+        left :60%
+    }
+    75% {
+        left :45%
+    }
+    100% {
+        left :50%
+    }
 }
