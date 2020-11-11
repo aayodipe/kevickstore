@@ -64,8 +64,6 @@ body {
     display: inline-block;
     width: 100%;
     text-align: center;
-
-
 }
 
 .first-nav-link::after {
@@ -161,8 +159,7 @@ body {
     width: 0;
     height: .1rem;
     background-color: #12376e;
-    display: block;
-    /* margin: auto; */
+    display: block; 
     transition: width .3s cubic-bezier(0.55, 0, 0.98, .54),
     background-color  .3s;
 }
